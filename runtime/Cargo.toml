@@ -1,0 +1,15 @@
+[package]
+name = "domain-projection-engine"
+version = "0.1.0"
+edition = "2021"
+authors = ["Arcstone Adaptive Science Systems, Inc."]
+description = "Freestanding reference engine for the Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
