@@ -116,6 +116,7 @@
         <li><strong>Theoretical Root:</strong> <a href="https://doi.org/10.5281/zenodo.24041851" target="_blank" rel="noopener">Zenodo Monograph (DOI: 10.5281/zenodo.24041851)</a></li>
         <li><strong>Normative Specification:</strong> <a href="docs/SPECIFICATION.md">ARC-SPEC-2026-DPP-01 (Document 3)</a></li>
         <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-008.md">ADR-008 (Preservation of Phase 7 Non-Supersession)</a></li>
+        <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-009.md">ADR-009 (Robust Continuous Invariant Certificates via Discrete Gronwall Margins)</a></li>
         <li><strong>Canonical Root:</strong> <a href="https://admissibilityscience.com" target="_blank" rel="noopener">admissibilityscience.com</a></li>
       </ul>
     </div>
@@ -123,9 +124,9 @@
     <div class="card">
       <h2>Formal Harness &amp; Reference Engine</h2>
       <ul>
-        <li><strong>Mechanized Proofs:</strong> <a href="proofs/Invariants.v"><code>proofs/Invariants.v</code></a> (Coq 8.18.0, zero admitting)</li>
+        <li><strong>Mechanized Proofs:</strong> <a href="proofs/Invariants.v"><code>proofs/Invariants.v</code></a>, <a href="proofs/Projection.v"><code>proofs/Projection.v</code></a> (Coq 8.18.0, zero admitting, Print Assumptions &equiv; &empty;)</li>
         <li><strong>Project Manifest:</strong> <a href="proofs/_CoqProject"><code>proofs/_CoqProject</code></a></li>
-        <li><strong>Reference Kernel:</strong> <a href="runtime/src/lib.rs"><code>runtime/src/lib.rs</code></a> (Freestanding Rust <code>#![no_std]</code>)</li>
+        <li><strong>Reference Kernel:</strong> <a href="runtime/src/lib.rs"><code>runtime/src/lib.rs</code></a> (Freestanding Rust <code>#![no_std]</code>, POSIX dominance lattice)</li>
         <li><strong>Engine Crate:</strong> <a href="runtime/Cargo.toml"><code>runtime/Cargo.toml</code></a></li>
       </ul>
     </div>
