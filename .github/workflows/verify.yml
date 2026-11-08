@@ -1,0 +1,44 @@
+name: Formal Verification & Engine Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify-coq:
+    name: Mechanized Coq Verification (8.18.0)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Coq
+        uses: coq-community/docker-coq-action@v1
+        with:
+          coq_version: '8.18.0'
+          before_install: ''
+          install: ''
+          custom_script: |
+            cd proofs
+            coq_makefile -f _CoqProject -o Makefile
+            make -j$(nproc)
+
+  verify-rust:
+    name: Freestanding Rust Engine (#![no_std])
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Rust Toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.75.0
+          targets: thumbv7em-none-eabihf
+
+      - name: Check Freestanding Build
+        run: |
+          cd runtime
+          cargo check --target thumbv7em-none-eabihf --release
