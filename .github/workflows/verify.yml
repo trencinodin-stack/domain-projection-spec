@@ -18,8 +18,8 @@ jobs:
         uses: coq-community/docker-coq-action@v1
         with:
           coq_version: '8.18.0'
-          before_install: ''
-          install: ''
+          before_script: |
+            sudo chown -R coq:coq .
           custom_script: |
             cd proofs
             coq_makefile -f _CoqProject -o Makefile
