@@ -1,0 +1,25 @@
+# Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)
+> Formal verification harness, Plonkish gate specifications, and freestanding reference engine.
+
+## Canonical Lineage & Hierarchy
+- Root Theory: Zenodo Monograph (DOI: 10.5281/zenodo.24041851)
+- Non-Normative Archive: Retired working notebook (Doc 2 / internal reference only)
+- Concrete Specification: ARC-SPEC-2026-DPP-01 (Doc 3 / normative implementation specification)
+- Architecture Decision: ADR-008 (Preservation of Phase 7 immutability; strict non-supersession)
+
+## Invariant Foundations
+- I1: Existence does not imply permission (strip ambient authority).
+- I2: Monotonic convergence under join-semilattice properties.
+- I3: Bounded execution ceiling: tau <= 11.99 ms, heap allocation M_alloc = 0, stack bound S_max <= 4096 B.
+- Mechanical Invariant: Independent braking via M_stop; software airlock delay ceiling Delta_t_max <= 13.19 ms.
+- Operational Constraint: C_ops = 0 (universal zero-maintenance, zero-drag deployment invariant).
+
+## Formal Toolchain & Implementations
+- Mechanized Proofs: Coq 8.18.0 (strict toolchain pin, zero admitting).
+- Ingress Circuit: Plonkish 64-bit boolean decomposition gates G1-G6.
+- Kernel Runtime: #![no_std] Rust 1.75.0, core library primitives only.
+
+## Authority & Canonical Routing
+- Domain: https://paradigm.admissibilityscience.com
+- Apex Root: https://admissibilityscience.com
+- Sponsoring Entity: Arcstone Adaptive Science Systems, Inc.
