@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you cite this specification or reference engine, please cite it as below."
+title: "Domain Projection Paradigm: ARC-SPEC-2026-DPP-01"
+authors:
+  - name: "Arcstone Adaptive Science Systems, Inc."
+version: 0.1.0
+date-released: 2026-11-07
+url: "https://paradigm.admissibilityscience.com"
+repository-code: "https://github.com/trencinodin-stack/domain-projection-spec"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24041851"
+    description: "Theoretical Monograph Anchor (Document 1)"
+keywords:
+  - "formal verification"
+  - "coq"
+  - "rust"
+  - "admissibility science"
+  - "cyber-physical systems"
