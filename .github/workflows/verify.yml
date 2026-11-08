@@ -14,12 +14,14 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Fix Directory Permissions for Container
+        run: |
+          chmod -R a+rwX .
+
       - name: Set up Coq
         uses: coq-community/docker-coq-action@v1
         with:
           coq_version: '8.18.0'
-          before_script: |
-            sudo chown -R coq:coq .
           custom_script: |
             cd proofs
             coq_makefile -f _CoqProject -o Makefile
