@@ -9,9 +9,11 @@ This specification defines the Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)
    - **Document 2** is a retired internal artifact; it must never be cited as normative authority.
    - **Document 3 (ARC-SPEC-2026-DPP-01)** is the sole normative specification for Plonkish circuits and Rust runtime constraints.
 
-2. **Non-Supersession:**
+2. **Non-Supersession & Architectural Decisions:**
    - The Phase 7 canonical baseline (`admissibilityscience.com`) remains frozen. 
    - Phase 8 is strictly an additive domain-projection mapping, not an amendment or refactoring of Phase 7 theorems.
+   - **ADR-008**: Phase 7 Master Baseline Immutability & Additive Domain Projection Isolation (`docs/adr/ADR-008.md`).
+   - **ADR-009**: Robust Continuous Invariant Certificates via Discrete Gronwall Margins (`docs/adr/ADR-009.md`).
 
 3. **Proof Verification:**
    - All mechanized Coq scripts in `proofs/` must compile cleanly under `coq 8.18.0`.
