@@ -6,12 +6,14 @@
 - Non-Normative Archive: Retired working notebook (Doc 2 / internal reference only)
 - Concrete Specification: ARC-SPEC-2026-DPP-01 (Doc 3 / normative implementation specification)
 - Architecture Decision: ADR-008 (Preservation of Phase 7 immutability; strict non-supersession)
+- Architecture Decision: ADR-009 (Robust continuous invariant certificates via discrete Gronwall margins; errata addendum)
 
 ## Invariant Foundations
 - I1: Existence does not imply permission (strip ambient authority).
 - I2: Monotonic convergence under join-semilattice properties.
 - I3: Bounded execution ceiling: tau <= 11.99 ms, heap allocation M_alloc = 0, stack bound S_max <= 4096 B.
 - Mechanical Invariant: Independent braking via M_stop; software airlock delay ceiling Delta_t_max <= 13.19 ms.
+- Robust Margin Invariant: Discrete integer witness gamma bounding sensor noise (noise_bound) and asynchronous loss via Bellman-Gronwall reachability.
 - Operational Constraint: C_ops = 0 (universal zero-maintenance, zero-drag deployment invariant).
 
 ## Formal Toolchain & Implementations
