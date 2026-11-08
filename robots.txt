@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /AGENTS.md
+Allow: /llms.txt
+Allow: /sitemap.xml
+
+Sitemap: https://paradigm.admissibilityscience.com/sitemap.xml
