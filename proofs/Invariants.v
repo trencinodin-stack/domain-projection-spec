@@ -1,5 +1,6 @@
 Require Import Lia.
 Require Import Bool.
+Require Import Arith.
 
 Module Invariants.
 
@@ -34,7 +35,7 @@ Module Invariants.
   Proof.
     intros s1 s2.
     unfold join. simpl.
-    apply Nat.le_max_l.
+    lia.
   Qed.
 
   (** Invariant I3: Fixed execution bounds *)
