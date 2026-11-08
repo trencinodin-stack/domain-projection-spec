@@ -86,31 +86,24 @@ $$
 domain-projection-spec/
 ├── .github/
 │   └── workflows/
-│       ├── coq-ci.yml              # Mechanized proof validation (Coq 8.18.0)
-│       └── runtime-ci.yml          # Bounded stack, zero-heap Rust validation
+│       └── verify.yml              # Mechanized proof check & cargo verification
 ├── docs/
-│   ├── adr/
-│   │   ├── ADR-008.md              # Phase 7 Baseline Immutability
-│   │   └── ADR-009.md              # Robust Gronwall Margins (Specification Errata)
-│   └── circuits/
-│       └── plonkish_gates.md       # Formal specifications for gates G1 through G6
+│   ├── SPECIFICATION.md            # Normative ARC-SPEC-2026-DPP-01 definition
+│   └── adr/
+│       ├── ADR-008.md              # Phase 7 Baseline Immutability
+│       └── ADR-009.md              # Robust Gronwall Margins (Specification Errata)
 ├── proofs/
-│   ├── Kinematics.v                # Continuous double-integrator dynamics
-│   ├── Projection.v                # Discrete projection mapping & Gronwall residual
-│   └── Soundness.v                 # Zero-error inductive invariant lemmas
+│   ├── _CoqProject                 # Coq project configuration
+│   ├── Invariants.v                # Microarchitectural invariants & verified bounds
+│   └── Projection.v                # Discrete projection mapping & capability proofs
 ├── runtime/
 │   ├── Cargo.toml                  # Freestanding no_std manifest
-│   ├── src/
-│   │   ├── airlock.rs              # Robust predicate D_robust(a)
-│   │   ├── gates.rs                # 64-bit decomposition arithmetic
-│   │   ├── lib.rs                  # Kernel root
-│   │   └── rational.rs             # Fixed-point Q-arithmetic (zero float)
-│   └── tests/
-│       └── boundary_checks.rs      # Valgrind zero-heap & latency benchmarks
+│   └── src/
+│       └── lib.rs                  # Kernel root, rational arithmetic & robust predicate
 ├── AGENTS.md                       # Machine-actionable agent governance instructions
 ├── CITATION.cff                    # Zenodo DOI bibliographic citation metadata
 ├── llms.txt                        # Machine-native semantic ingress map
-└── SPECIFICATION.md                # Normative ARC-SPEC-2026-DPP-01 definition
+└── README.md                       # Repository overview & verification harness
 ```
 
 ## 5. Architectural Decision Records (ADRs)
@@ -158,9 +151,8 @@ coq_makefile -f _CoqProject -o Makefile
 make -j4
 ```
 
-Compiles `Kinematics.v`, `Projection.v`, and `Soundness.v`.
-
-Verifies zero `Admitted.` statements ($P_{\text{err}} = 0$).
+* Compiles `Invariants.v` and `Projection.v`.
+* Verifies zero `Admitted.` statements and empty assumptions (`P_err = 0`).
 
 ## 7. Machine Ingress & Semantic Anchors
 
