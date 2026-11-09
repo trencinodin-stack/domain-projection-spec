@@ -1,27 +1,36 @@
 # Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)
 > Formal verification harness, Plonkish gate specifications, and freestanding reference engine.
+> Master Epistemic Anchor: A-77-DELTA-SHIELD-LOCKED
+> Upstream Keystone Authority: ARC-CAPSTONE-2026-SYNTH-01-REV19 (10.5281/zenodo.24093739)
+> Release Alignment: v19-archival-canonical / Phase 8 (v0.1.0)
+> Operating Paradigm: C_ops == 0 | T_total <= 16.50ms | tau_eval <= 10.00ms | M_alloc == 0 | S_max <= 4096B
 
 ## Canonical Lineage & Hierarchy
-- Root Theory: Zenodo Monograph (DOI: 10.5281/zenodo.24041851)
+- Canonical Capstone Reference: The Mechanics of Admissibility (DOI: 10.5281/zenodo.24093739 / ARC-CAPSTONE-2026-SYNTH-01-REV19)
+- Root Theory Monograph: Domain Projection Paradigm (DOI: 10.5281/zenodo.24041851 / ARC-SPEC-2026-DPP-01)
 - Non-Normative Archive: Retired working notebook (Doc 2 / internal reference only)
 - Concrete Specification: ARC-SPEC-2026-DPP-01 (Doc 3 / normative implementation specification)
 - Architecture Decision: ADR-008 (Preservation of Phase 7 immutability; strict non-supersession)
 - Architecture Decision: ADR-009 (Robust continuous invariant certificates via discrete Gronwall margins; production baseline)
 
-## Invariant Foundations
-- I1: Existence does not imply permission (strip ambient authority).
-- I2: Monotonic convergence under join-semilattice properties.
-- I3: Bounded execution ceiling: tau <= 11.99 ms, heap allocation M_alloc = 0, stack bound S_max <= 4096 B.
-- Mechanical Invariant: Independent braking via M_stop; software airlock delay ceiling Delta_t_max <= 13.19 ms.
-- Robust Margin Invariant: Discrete rational witness gamma in Q bounding sensor noise (noise_bound) and asynchronous loss via Bellman-Gronwall reachability.
+## Invariant Foundations & Cyber-Physical Clamps
+- I1 (Non-Authorization Safety): Existence does not imply permission (strip ambient authority). D(a) = DENY => Delta_external = 0.
+- I2 (Single-Commit Effect Gate): Monotonic convergence under join-semilattice properties; Sum(Committed) <= 1.
+- I3 (Zero Ambient Authority): Non-deterministic candidate producers hold zero ambient authority (Proposer != Executor).
+- Conserved Latency Budget: T_total = tau_sense (1.50ms) + tau_eval (10.00ms) + tau_sync (1.20ms) + tau_brake_engage (1.81ms) = 14.51ms <= 16.50ms (1.99ms certified timing slack).
+- Evaluation Watchdog Ceiling: tau_eval <= T_cycle <= 10.00ms (NMI hardware override fallback tau_override <= 11.99ms).
+- Mechanical Stopping Barrier: M_stop^L inclusive of mechanical latch buffer d_latch = (eps_v^2) / (2 * a_brake) + eps_v * tau_latch_lock.
+- Robust Rational Margin: Discrete witness gamma in Q bounding observer estimation noise and zero-order hold discretization error.
+- Physical Memory Perimeter: Freestanding SRAM TCM scratchpad, M_alloc = 0 B, static stack ceiling S_max <= 4096 B.
 - Operational Constraint: C_ops = 0 (universal zero-maintenance, zero-drag deployment invariant).
 
 ## Formal Toolchain & Implementations
 - Mechanized Proofs: Coq 8.18.0 (strict toolchain pin, zero admitting, Print Assumptions empty).
 - Ingress Circuit: Plonkish 64-bit boolean decomposition gates G1-G6.
-- Kernel Runtime: #![no_std] Rust 1.80+, core library primitives only.
+- Kernel Runtime: #![no_std] Rust 1.80+, core library primitives only, #[forbid(unsafe_code)].
 
 ## Authority & Canonical Routing
 - Domain: https://paradigm.admissibilityscience.com
 - Apex Root: https://admissibilityscience.com
 - Sponsoring Entity: Arcstone Adaptive Science Systems, Inc.
+- Principal Architect: Jesse Tuohy (ORCID: 0009-0008-4661-1540)
