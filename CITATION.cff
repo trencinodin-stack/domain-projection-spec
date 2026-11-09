@@ -2,18 +2,40 @@ cff-version: 1.2.0
 message: "If you cite this specification or reference engine, please cite it as below."
 title: "Domain Projection Paradigm: ARC-SPEC-2026-DPP-01"
 authors:
+  - family-names: "Tuohy"
+    given-names: "Jesse"
+    orcid: "https://orcid.org/0009-0008-4661-1540"
   - name: "Arcstone Adaptive Science Systems, Inc."
 version: 0.1.0
-date-released: 2026-11-07
+date-released: 2026-11-09
 url: "https://paradigm.admissibilityscience.com"
 repository-code: "https://github.com/trencinodin-stack/domain-projection-spec"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.24041851"
-    description: "Theoretical Monograph Anchor (Document 1)"
+    description: "Theoretical Monograph Anchor (Document 1: ARC-SPEC-2026-DPP-01)"
+  - type: doi
+    value: "10.5281/zenodo.24093739"
+    description: "Canonical Reference Specification (ARC-CAPSTONE-2026-SYNTH-01-REV19)"
 keywords:
   - "formal verification"
   - "coq"
   - "rust"
   - "admissibility science"
   - "cyber-physical systems"
+  - "reachability certificates"
+  - "gronwall bounds"
+  - "barrier functionals"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Tuohy"
+      given-names: "Jesse"
+      orcid: "https://orcid.org/0009-0008-4661-1540"
+    - name: "Arcstone Adaptive Science Systems, Inc."
+  title: "Domain Projection Paradigm: ARC-SPEC-2026-DPP-01"
+  doi: "10.5281/zenodo.24041851"
+  url: "https://paradigm.admissibilityscience.com"
+  year: 2026
+  month: 11
+  version: "0.1.0"
