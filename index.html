@@ -8,6 +8,7 @@
   <title>Domain Projection Paradigm — ARC-SPEC-2026-DPP-01</title>
   <meta name="description" content="Concrete verification harness, mechanized Coq proofs, Plonkish gate specifications, and freestanding reference engine.">
   <link rel="canonical" href="https://paradigm.admissibilityscience.com/">
+  <link rel="author" href="https://orcid.org/0009-0008-4661-1540">
   <style>
     :root {
       --bg: #0b0f19;
@@ -16,6 +17,7 @@
       --text: #e5e7eb;
       --muted: #9ca3af;
       --accent: #38bdf8;
+      --accent2: #34d399;
       --code-bg: #030712;
     }
     body {
@@ -51,6 +53,11 @@
       border-radius: 4px;
       margin-right: 0.5rem;
     }
+    .badge-accent2 {
+      color: var(--accent2);
+      border-color: rgba(52, 211, 153, 0.3);
+      background: rgba(52, 211, 153, 0.1);
+    }
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -62,6 +69,10 @@
       font-size: 1.15rem;
       margin-top: 0;
       color: var(--accent);
+    }
+    .card-capstone {
+      border-left: 3px solid var(--accent);
+      background: linear-gradient(180deg, rgba(56, 189, 248, 0.05), rgba(17, 24, 39, 1));
     }
     ul {
       margin: 0.5rem 0 0 1.25rem;
@@ -97,27 +108,82 @@
       gap: 1rem;
     }
   </style>
+
+  <!-- Schema.org Machine Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://admissibilityscience.com/#jesse-tuohy",
+        "name": "Jesse Tuohy",
+        "identifier": "0009-0008-4661-1540",
+        "sameAs": [
+          "https://orcid.org/0009-0008-4661-1540",
+          "https://github.com/trencinodin-stack"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://admissibilityscience.com/#arcstone",
+        "name": "Arcstone Adaptive Science Systems, Inc.",
+        "url": "https://www.arcstoneos.com/"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://paradigm.admissibilityscience.com/#dpp-spec",
+        "url": "https://paradigm.admissibilityscience.com/",
+        "headline": "Domain Projection Paradigm: ARC-SPEC-2026-DPP-01",
+        "description": "Concrete verification harness, mechanized Coq proofs, Plonkish gate specifications, and freestanding reference engine.",
+        "author": { "@id": "https://admissibilityscience.com/#jesse-tuohy" },
+        "publisher": { "@id": "https://admissibilityscience.com/#arcstone" },
+        "version": "v0.1.0",
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "Canonical DOI", "value": "10.5281/zenodo.24041851" },
+          { "@type": "PropertyValue", "propertyID": "Master Epistemic Anchor", "value": "A-77-DELTA-SHIELD-LOCKED" },
+          { "@type": "PropertyValue", "propertyID": "Upstream Capstone DOI", "value": "10.5281/zenodo.24093739" }
+        ],
+        "isPartOf": "https://zenodo.org/communities/arcstone-continuity-core",
+        "citation": [
+          "https://doi.org/10.5281/zenodo.24093739",
+          "https://doi.org/10.5281/zenodo.24041851",
+          "https://doi.org/10.5281/zenodo.23967282",
+          "https://doi.org/10.5281/zenodo.23525986"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="container">
     <header>
       <span class="badge">SPECIFICATION</span>
       <span class="badge">PHASE 8</span>
-      <span class="badge">C_ops = 0</span>
+      <span class="badge">ADR-008 / ADR-009</span>
+      <span class="badge badge-accent2">ACS-4-ZERO-LEAKAGE-SEALED</span>
       <h1>Domain Projection Paradigm</h1>
       <p style="color: var(--muted); margin: 0.5rem 0 0 0;">
         Concrete verification harness, mechanized proofs, and freestanding execution engine.
       </p>
     </header>
 
+    <div class="card card-capstone">
+      <h2>Governing Keystone &amp; Capstone Authority</h2>
+      <ul>
+        <li><strong>Canonical Reference Specification:</strong> <a href="https://doi.org/10.5281/zenodo.24093739" target="_blank" rel="noopener">ARC-CAPSTONE-2026-SYNTH-01-REV19 (DOI: 10.5281/zenodo.24093739)</a> &mdash; <em>The Mechanics of Admissibility: Deterministic Admission Control and Certified Reachability for Cyber-Physical Substrates</em>. Formulates closed-form barrier functionals (<code>M_stop^L</code>, <code>F_L</code>, <code>B</code>) and identity boundary handoffs.</li>
+        <li><strong>Field Root Clearinghouse:</strong> <a href="https://admissibilityscience.com" target="_blank" rel="noopener">admissibilityscience.com</a> &mdash; Sovereign root for axioms, epistemic protocols, and ecosystem routing.</li>
+      </ul>
+    </div>
+
     <div class="card">
       <h2>Artifact Hierarchy &amp; Provenance</h2>
       <ul>
-        <li><strong>Theoretical Root:</strong> <a href="https://doi.org/10.5281/zenodo.24041851" target="_blank" rel="noopener">Zenodo Monograph (DOI: 10.5281/zenodo.24041851)</a></li>
+        <li><strong>Phase 8 Theoretical Foundation:</strong> <a href="https://doi.org/10.5281/zenodo.24041851" target="_blank" rel="noopener">Zenodo Monograph (DOI: 10.5281/zenodo.24041851)</a></li>
         <li><strong>Normative Specification:</strong> <a href="docs/SPECIFICATION.md">ARC-SPEC-2026-DPP-01 (Document 3)</a></li>
         <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-008.md">ADR-008 (Preservation of Phase 7 Non-Supersession)</a></li>
         <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-009.md">ADR-009 (Robust Continuous Invariant Certificates via Discrete Gronwall Margins)</a></li>
-        <li><strong>Canonical Root:</strong> <a href="https://admissibilityscience.com" target="_blank" rel="noopener">admissibilityscience.com</a></li>
       </ul>
     </div>
 
@@ -132,12 +198,14 @@
     </div>
 
     <div class="card">
-      <h2>Operational Guarantees</h2>
+      <h2>Operational Guarantees &amp; Cyber-Physical Clamps</h2>
       <ul>
-        <li><code>M_alloc = 0</code> &mdash; Zero dynamic allocations; static footprint.</li>
+        <li><code>M_alloc = 0 B</code> &mdash; Zero dynamic allocations; static TCM SRAM memory footprint.</li>
         <li><code>S_max &le; 4096 B</code> &mdash; Fixed execution stack bounds.</li>
-        <li><code>&tau;_override &le; 11.99 ms</code> &mdash; Maximum evaluate cycle ceiling.</li>
-        <li><code>&Delta;t_max &le; 13.19 ms</code> &mdash; Ingress-to-brake physical disengagement bound.</li>
+        <li><code>T_total &le; 16.50 ms</code> &mdash; Total conserved cyber-physical latency budget (14.51 ms verified empirical / 1.99 ms certified timing slack).</li>
+        <li><code>&tau;_eval &le; 10.00 ms</code> &mdash; Maximum evaluation cycle watchdog ceiling (hardware NMI override <code>&tau;_override &le; 11.99 ms</code>).</li>
+        <li><code>M_stop^L</code> &mdash; Kinetic stopping barrier inclusive of mechanical deadband latch buffer <code>d_latch</code>.</li>
+        <li><code>&gamma; &isin; &Qopf;</code> &mdash; Offline-extracted rational Gronwall witness absorbing sensor drift and discrete hold error.</li>
         <li><code>C_ops = 0</code> &mdash; Fully static, zero-drag continuous deployment.</li>
       </ul>
     </div>
