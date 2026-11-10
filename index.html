@@ -74,6 +74,10 @@
       border-left: 3px solid var(--accent);
       background: linear-gradient(180deg, rgba(56, 189, 248, 0.05), rgba(17, 24, 39, 1));
     }
+    .card-treasury {
+      border-left: 3px solid var(--accent2);
+      background: linear-gradient(180deg, rgba(52, 211, 153, 0.05), rgba(17, 24, 39, 1));
+    }
     ul {
       margin: 0.5rem 0 0 1.25rem;
       padding: 0;
@@ -146,6 +150,7 @@
         ],
         "isPartOf": "https://zenodo.org/communities/arcstone-continuity-core",
         "citation": [
+          "https://doi.org/10.5281/zenodo.24119501",
           "https://doi.org/10.5281/zenodo.24093739",
           "https://doi.org/10.5281/zenodo.24041851",
           "https://doi.org/10.5281/zenodo.23967282",
@@ -174,6 +179,14 @@
       <ul>
         <li><strong>Canonical Reference Specification:</strong> <a href="https://doi.org/10.5281/zenodo.24093739" target="_blank" rel="noopener">ARC-CAPSTONE-2026-SYNTH-01-REV19 (DOI: 10.5281/zenodo.24093739)</a> &mdash; <em>The Mechanics of Admissibility: Deterministic Admission Control and Certified Reachability for Cyber-Physical Substrates</em>. Formulates closed-form barrier functionals (<code>M_stop^L</code>, <code>F_L</code>, <code>B</code>) and identity boundary handoffs.</li>
         <li><strong>Field Root Clearinghouse:</strong> <a href="https://admissibilityscience.com" target="_blank" rel="noopener">admissibilityscience.com</a> &mdash; Sovereign root for axioms, epistemic protocols, and ecosystem routing.</li>
+      </ul>
+    </div>
+
+    <div class="card card-treasury">
+      <h2 style="color: var(--accent2);">Downstream Reference Deployments</h2>
+      <ul>
+        <li><strong>Institutional Treasury Binding Protocol:</strong> <a href="https://doi.org/10.5281/zenodo.24119501" target="_blank" rel="noopener">ARC-SPEC-2026-BIND-01 (REV-11 / DOI: 10.5281/zenodo.24119501)</a> &mdash; Zero-heap admission control (<code>M_alloc = 0</code>), out-of-band CAS payload isolation (<code>S_max &le; 4096 B</code>), 96-byte <code>ExecutionPermit</code> generation, and closed 7-state reconciliation automaton under Federal Reserve SR 26-2 &amp; OCC Bulletin 2026-13.</li>
+        <li><strong>Reference Implementation Crate:</strong> <a href="https://github.com/trencinodin-stack/arcstone-treasury-bind" target="_blank" rel="noopener"><code>arcstone-treasury-bind</code> (v0.1.0)</a> &mdash; Freestanding <code>#![no_std]</code> Rust implementation with 11-point adversarial test vectors.</li>
       </ul>
     </div>
 
