@@ -42,3 +42,8 @@ This specification defines the Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)
      $$\text{BREACH (POSIX 40)} \succ \text{REFUSAL (POSIX 32)} \succ \text{CORRUPT (POSIX 30)} \succ \text{PWC (POSIX 12)} \succ \text{FREEZE (POSIX 10)} \succ \text{PASS (POSIX 0)}$$
    - Continuous Gronwall reachability deficit ($h(\hat{x}) - M_{\text{stop}}^L(\hat{x}) < \gamma$) maps to `POSIX 32 (REFUSAL)`.
    - Evaluation cycle exhaustion ($\tau_{\text{eval}} > 10.00\text{ ms}$ or NMI trigger at $11.99\text{ ms}$) maps to `POSIX 40 (BREACH)`.
+  
+7. **Downstream Protocol Realizations & Ecosystem Routing:**
+   - **Continuous Physical Kinetics:** Handled within this repository (`domain-projection-spec`) and verified on the edge at `paradigm.admissibilityscience.com`.
+   - **Institutional Treasury & Financial Admission:** Realized via `arcstone-treasury-bind` under `ARC-SPEC-2026-BIND-01 (REV-11)` (Permanent DOI: [10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501)). Enforces zero-heap state transitions ($M_{\text{alloc}} = 0$), out-of-band CAS payload isolation ($S_{\max} \le 4096\text{ B}$), 96-byte `ExecutionPermit` generation, and closed 7-state reconciliation automaton under Federal Reserve SR 26-2 / OCC Bulletin 2026-13.
+   - **Upstream Epistemic Invariants:** Governed immutably by `arcstone-continuity-core` and the canonical field root at `admissibilityscience.com`.
