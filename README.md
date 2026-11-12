@@ -202,6 +202,8 @@ To guarantee zero operational drag ($C_{\text{ops}} = 0$) on this core specifica
   * Fail-Closed Capability Tripping: Capability invalidity deterministically triggers mechanical stop refusal (`c.is_valid = false -> mechanical_stop_tripped = true`).
 * **Proof Standard:** Hermetic container verification with zero admitted axioms (`Print Assumptions == ∅`).
 * **Governing Monograph Reference:** `ARC-MONO-2026-REFINEMENT-01` (DOI: [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851))
+* **Cryptographic Proof Receipt:** [`docs/attestations/REFINEMENT-AUDIT-2026-V1.json`](https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json) (`REFINEMENT-PROOF-CHAIN-CLOSED`)
+* **Pinned Baseline Anchor:** Commit `d8d8d3870dd8b9f449b445645ec73ca5d0f02e60` (`tree_sha256`: `fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da`)
 
 ---
 
