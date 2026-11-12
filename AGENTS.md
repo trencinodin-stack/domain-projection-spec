@@ -45,5 +45,10 @@ This specification defines the Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)
   
 7. **Downstream Protocol Realizations & Ecosystem Routing:**
    - **Continuous Physical Kinetics:** Handled within this repository (`domain-projection-spec`) and verified on the edge at `paradigm.admissibilityscience.com`.
+   - **Decoupled Mechanized Refinement Airlock:** Realized downstream via `arcstone-refinement-harness` under `ARC-MONO-2026-REFINEMENT-01` (`v0.1.0` / Permanent DOI: [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851)). Executes LLBC translation validation via Charon and Aeneas, proving one-way forward safety simulation ($\mathrm{Rust\_Impl} \sqsubseteq \mathrm{Coq\_Spec}$) and fail-closed capability tripping under zero admitted axioms (`Print Assumptions == ∅`).
    - **Institutional Treasury & Financial Admission:** Realized via `arcstone-treasury-bind` under `ARC-SPEC-2026-BIND-01 (REV-11)` (Permanent DOI: [10.5281/zenodo.24119501](https://doi.org/10.5281/zenodo.24119501)). Enforces zero-heap state transitions ($M_{\text{alloc}} = 0$), out-of-band CAS payload isolation ($S_{\max} \le 4096\text{ B}$), 96-byte `ExecutionPermit` generation, and closed 7-state reconciliation automaton under Federal Reserve SR 26-2 / OCC Bulletin 2026-13.
    - **Upstream Epistemic Invariants:** Governed immutably by `arcstone-continuity-core` and the canonical field root at `admissibilityscience.com`.
+
+8. **Refinement Airlock & Operational Drag Isolation ($C_{\text{ops}} = 0$):**
+   - Autonomous agents and verifiers must NOT inject heavy SMT solving, theorem-prover toolchain orchestration, or cross-language translation-validation dependencies into this repository.
+   - All mechanized simulation and extraction verification loops are decoupled and absorbed downstream by `arcstone-refinement-harness` to preserve strict zero operational drag ($C_{\text{ops}} = 0$) and baseline stability across the `domain-projection-spec` core.
