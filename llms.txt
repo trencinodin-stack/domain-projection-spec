@@ -30,6 +30,9 @@
 - Kernel Runtime: #![no_std] Rust 1.80+, core library primitives only, #[forbid(unsafe_code)].
 
 ## Ecosystem Specifications & Downstream References
+- Decoupled Refinement Airlock (ARC-MONO-2026-REFINEMENT-01): Mechanized translation validation, Charon LLBC extraction, Aeneas Coq functional emission, and forward safety simulation proofs (Rust_Impl ⊑ Coq_Spec) under zero admitted axioms (Print Assumptions == ∅).
+  - Reference Implementation: https://github.com/trencinodin-stack/arcstone-refinement-harness (v0.1.0)
+  - Canonical DOI: https://doi.org/10.5281/zenodo.24041851
 - Treasury Binding Protocol (ARC-SPEC-2026-BIND-01, REV-11): Institutional financial admission control, out-of-band CAS payload isolation, TOCTOU elimination, and 96-byte ExecutionPermit serialization under Federal Reserve SR 26-2 & OCC Bulletin 2026-13.
   - Reference Implementation: https://github.com/trencinodin-stack/arcstone-treasury-bind (v0.1.0)
   - Canonical DOI: https://doi.org/10.5281/zenodo.24119501
