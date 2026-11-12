@@ -191,6 +191,18 @@ make -j4
 - Compiles `Invariants.v` and `Projection.v`.
 - Verifies zero `Admitted.` statements and empty assumptions (`Print Assumptions ≡ ∅`).
 
+### 4. Downstream Mechanized Refinement & Simulation Airlock
+
+To guarantee zero operational drag ($C_{\text{ops}} = 0$) on this core specification repository while preserving continuous verification against upstream compiler toolchain churn, full-program translation validation and forward simulation proofs are decoupled into a dedicated downstream harness:
+
+* **Downstream Refinement Repository:** [`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness) (`v0.1.0`)
+* **Formal Translation Stack:** Charon (LLBC extraction) $\to$ Aeneas (functional Coq translation) $\to$ Coq 8.18.0.
+* **Verified Simulation Invariants:**
+  * One-Way Forward Simulation: Concrete defensive evaluation implies abstract specification passage ($\mathrm{Rust\_Impl} \sqsubseteq \mathrm{Coq\_Spec}$).
+  * Fail-Closed Capability Tripping: Capability invalidity deterministically triggers mechanical stop refusal (`c.is_valid = false -> mechanical_stop_tripped = true`).
+* **Proof Standard:** Hermetic container verification with zero admitted axioms (`Print Assumptions == ∅`).
+* **Governing Monograph Reference:** `ARC-MONO-2026-REFINEMENT-01` (DOI: [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851))
+
 ---
 
 ## 8. Machine Ingress & Semantic Anchors
@@ -201,6 +213,7 @@ make -j4
 - **Agent Precedence Rules:** `AGENTS.md`
 - **Live Canonical Edge:** [https://paradigm.admissibilityscience.com](https://paradigm.admissibilityscience.com)
 - **Canonical Root Clearinghouse:** [https://admissibilityscience.com](https://admissibilityscience.com)
+- **Downstream Refinement Airlock:** [`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness) (`v0.1.0`)
 
 ---
 
