@@ -31,6 +31,8 @@
 
 ## Ecosystem Specifications & Downstream References
 - Decoupled Refinement Airlock (ARC-MONO-2026-REFINEMENT-01): Mechanized translation validation, Charon LLBC extraction, Aeneas Coq functional emission, and forward safety simulation proofs (Rust_Impl ⊑ Coq_Spec) under zero admitted axioms (Print Assumptions == ∅).
+  - Cryptographic Proof Receipt: https://raw.githubusercontent.com/trencinodin-stack/arcstone-refinement-harness/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json (REFINEMENT-PROOF-CHAIN-CLOSED, admitted_axioms: 0)
+  - Pinned Baseline Anchor: commit d8d8d3870dd8b9f449b445645ec73ca5d0f02e60 (tree_sha256: fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da)
   - Reference Implementation: https://github.com/trencinodin-stack/arcstone-refinement-harness (v0.1.0)
   - Canonical DOI: https://doi.org/10.5281/zenodo.24041851
 - Treasury Binding Protocol (ARC-SPEC-2026-BIND-01, REV-11): Institutional financial admission control, out-of-band CAS payload isolation, TOCTOU elimination, and 96-byte ExecutionPermit serialization under Federal Reserve SR 26-2 & OCC Bulletin 2026-13.
