@@ -204,6 +204,7 @@ To guarantee zero operational drag ($C_{\text{ops}} = 0$) on this core specifica
 * **Governing Monograph Reference:** `ARC-MONO-2026-REFINEMENT-01` (DOI: [10.5281/zenodo.24041851](https://doi.org/10.5281/zenodo.24041851))
 * **Cryptographic Proof Receipt:** [`docs/attestations/REFINEMENT-AUDIT-2026-V1.json`](https://github.com/trencinodin-stack/arcstone-refinement-harness/blob/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json) (`REFINEMENT-PROOF-CHAIN-CLOSED`)
 * **Pinned Baseline Anchor:** Commit `d8d8d3870dd8b9f449b445645ec73ca5d0f02e60` (`tree_sha256`: `fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da`)
+* **Turnkey Downstream Airlock Template:** [`arcstone-airlock-blueprint`](https://github.com/trencinodin-stack/arcstone-airlock-blueprint) (`v0.1.0` — Public Repository Template; offline digest-pinned OCI Charon/Aeneas/Coq 8.18.0 airlock, semantic canary mutant verification, `coqchk -o` kernel rechecking, and Sigstore-attested `REFINEMENT-AUDIT.json` release receipts for bare-metal `#![no_std]` Rust crates).
 
 ---
 
@@ -216,6 +217,7 @@ To guarantee zero operational drag ($C_{\text{ops}} = 0$) on this core specifica
 - **Live Canonical Edge:** [https://paradigm.admissibilityscience.com](https://paradigm.admissibilityscience.com)
 - **Canonical Root Clearinghouse:** [https://admissibilityscience.com](https://admissibilityscience.com)
 - **Downstream Refinement Airlock:** [`arcstone-refinement-harness`](https://github.com/trencinodin-stack/arcstone-refinement-harness) (`v0.1.0`)
+- **Turnkey Refinement Airlock Template:** [`arcstone-airlock-blueprint`](https://github.com/trencinodin-stack/arcstone-airlock-blueprint) (`v0.1.0`)
 
 ---
 
