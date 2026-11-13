@@ -35,6 +35,8 @@
   - Pinned Baseline Anchor: commit d8d8d3870dd8b9f449b445645ec73ca5d0f02e60 (tree_sha256: fcd08cc86d9802f64442ab7162abcf23678900fda692a2427902cbaf05abd3da)
   - Reference Implementation: https://github.com/trencinodin-stack/arcstone-refinement-harness (v0.1.0)
   - Canonical DOI: https://doi.org/10.5281/zenodo.24041851
+- Turnkey Refinement Airlock Template: Public GitHub repository template packaging an offline digest-pinned OCI Charon/Aeneas/Coq 8.18.0 airlock (--network none), semantic canary mutant verification, coqchk -o kernel rechecking, and Sigstore-attested REFINEMENT-AUDIT.json release receipts for bare-metal #![no_std] Rust crates (C_ops = 0 upstream).
+  - Repository Template: https://github.com/trencinodin-stack/arcstone-airlock-blueprint (v0.1.0)
 - Treasury Binding Protocol (ARC-SPEC-2026-BIND-01, REV-11): Institutional financial admission control, out-of-band CAS payload isolation, TOCTOU elimination, and 96-byte ExecutionPermit serialization under Federal Reserve SR 26-2 & OCC Bulletin 2026-13.
   - Reference Implementation: https://github.com/trencinodin-stack/arcstone-treasury-bind (v0.1.0)
   - Canonical DOI: https://doi.org/10.5281/zenodo.24119501
