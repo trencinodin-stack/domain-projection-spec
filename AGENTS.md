@@ -15,11 +15,13 @@ This specification defines the Domain Projection Paradigm (ARC-SPEC-2026-DPP-01)
    - Phase 8 is strictly an additive domain-projection mapping; it does not supersede, amend, or refactor Phase 7 theorems.
    - **ADR-008:** Phase 7 Master Baseline Immutability & Additive Domain Projection Isolation (`docs/adr/ADR-008.md`).
    - **ADR-009:** Robust Continuous Invariant Certificates via Discrete Gronwall Margins (`docs/adr/ADR-009.md`).
+   - **ADR-010:** Cyber-Physical Kinetic Envelope Harmonization & Capstone REV19 Alignment (`docs/adr/ADR-010.md` — conserved $T_{\text{total}} \le 16.50\text{ ms}$ budget, $\tau_{\text{eval}} \le 10.00\text{ ms}$ watchdog, and latched stopping functional $M_{\text{stop}}^L$; governing refinement over ADR-008 & ADR-009).
 
 3. **The Formal Verification Boundary:**
    Per Section 6 of the Arcstone Canonical Manifest, agents and auditors must maintain strict disciplinary separation:
    - **Reference Specification Layer (`ARC-CAPSTONE-2026-SYNTH-01-REV19`):** Pure continuous kinetics, Lie derivative boundary handoffs ($F_L \equiv B$), closed-form stopping envelopes ($M_{\text{stop}}^L$), and certified timing contracts. Closed and verified analytically on paper.
    - **Verification & Execution Harness (`domain-projection-spec`):** Downstream implementation realization comprising machine-checked Coq proof objects, freestanding `#![no_std]` Rust kernels, and discrete Gronwall witnesses ($\gamma \in \mathbb{Q}$). Realization tests verify conformance without reopening the reference specification.
+    - **Non-Normative Indexing & LLM Surfaces:** Discovery manifests (`AGENTS.md`, `llms.txt`), web pages, and external LLM checks are non-normative indexing surfaces and carry zero execution or proof authority ($I_3$).
 
 4. **Proof Verification Standard:**
    - Proof scripts in `proofs/` (`Invariants.v`, `Projection.v`) must compile cleanly under Coq 8.18.0 via `proofs/_CoqProject`.
