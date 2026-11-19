@@ -119,6 +119,7 @@ $$
 Per Section 6 of the Master Canonical Manifest, this repository adheres to strict epistemic demarcation:
 - **The Reference Specification Layer (`ARC-CAPSTONE-2026-SYNTH-01-REV19`):** Pure continuous mathematics, Lie derivative barrier handoffs ($\dot{F}_L \ge 0, \dot{B} \ge 0, F_L \equiv B$), closed-form kinetic envelopes ($M_{\text{stop}}^L$), and certified timing bounds. Exhaustive and closed on paper.
 - **The Conformance & Verification Evidence Package (`domain-projection-spec`):** Downstream implementation realization comprising machine-checked Coq proof objects, freestanding `#[no_std]` Rust kernels, Plonkish circuits ($G_1$–$G_6$), and HIL oscilloscope execution traces. Implementation conformance packages demonstrate realization without reopening the reference specification.
+- **Non-Normative Indexing & External LLM Surfaces:** Discovery manifests (`AGENTS.md`, `llms.txt`), web pages (`index.html`), and external LLM structural checks are non-normative indexing surfaces carrying zero proof or execution authority ($I_3$).
 
 ---
 
@@ -133,7 +134,8 @@ domain-projection-spec/
 │   ├── SPECIFICATION.md            # Normative ARC-SPEC-2026-DPP-01 definition
 │   └── adr/
 │       ├── ADR-008.md              # Phase 7 Baseline Immutability
-│       └── ADR-009.md              # Robust Gronwall Margins (Specification Errata)
+│       ├── ADR-009.md              # Robust Gronwall Margins (Specification Errata)
+│       └── ADR-010.md              # Cyber-Physical Kinetic Envelope Harmonization (REV19)
 ├── proofs/
 │   ├── _CoqProject                 # Coq project configuration
 │   ├── Invariants.v                # Microarchitectural invariants & verified bounds
@@ -155,6 +157,7 @@ domain-projection-spec/
 
 - **ADR-008: Baseline Immutability & Domain Projection Isolation:** Formally enforces that Phase 7 (`A-77-DELTA-SHIELD-LOCKED`) remains frozen and untouched. Phase 8 acts as an additive, decoupled outer projection airlock.
 - **ADR-009: Robust Gronwall Margins for Continuous Boundaries:** Closed the continuous-to-discrete observation gap identified during external adversarial audit by deriving the discrete Bellman-Gronwall residual $\gamma \in \mathbb{Q}$, preserving the `#[no_std]` zero-float profile.
+  - **ADR-010: Cyber-Physical Kinetic Envelope Harmonization & Capstone REV19 Alignment:** Standardizes the conserved 4-stage latency budget ($T_{\text{total}} \le 16.50\text{ ms}$, $\tau_{\text{eval}} \le 10.00\text{ ms}$) and mechanical deadband latch functional ($M_{\text{stop}}^L$ with $d_{\text{latch}}$), serving as the governing refinement over ADR-008 and ADR-009.
 
 ---
 
