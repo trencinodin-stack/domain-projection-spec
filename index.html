@@ -166,7 +166,7 @@
     <header>
       <span class="badge">SPECIFICATION</span>
       <span class="badge">PHASE 8</span>
-      <span class="badge">ADR-008 / ADR-009</span>
+      <span class="badge">ADR-008 / ADR-009 / ADR-010</span>
       <span class="badge badge-accent2">ACS-4-ZERO-LEAKAGE-SEALED</span>
       <h1>Domain Projection Paradigm</h1>
       <p style="color: var(--muted); margin: 0.5rem 0 0 0;">
@@ -199,6 +199,7 @@
         <li><strong>Normative Specification:</strong> <a href="docs/SPECIFICATION.md">ARC-SPEC-2026-DPP-01 (Document 3)</a></li>
         <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-008.md">ADR-008 (Preservation of Phase 7 Non-Supersession)</a></li>
         <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-009.md">ADR-009 (Robust Continuous Invariant Certificates via Discrete Gronwall Margins)</a></li>
+        <li><strong>Architectural Decision:</strong> <a href="docs/adr/ADR-010.md">ADR-010 (Cyber-Physical Kinetic Envelope Harmonization &amp; Capstone REV19 Alignment)</a></li>
       </ul>
     </div>
 
@@ -228,6 +229,8 @@
     <div class="card">
       <h2>Machine Verification &amp; Discovery</h2>
       <ul>
+        <li><strong>Verification Scope Boundary:</strong> Mechanized Coq 8.18.0 proofs (<code>Print Assumptions == &empty;</code>) and <code>#![no_std]</code> test harnesses apply strictly to pinned crates; discovery manifests (<code>llms.txt</code>, <code>AGENTS.md</code>), web pages, and external LLM checks are non-normative indexing surfaces.</li>
+        <li><strong>Independent Auditor Quick-Check:</strong> <code>git clone --depth 1 --branch v0.1.0 https://github.com/trencinodin-stack/domain-projection-spec.git &amp;&amp; (cd domain-projection-spec &amp;&amp; cargo test)</code></li>
         <li><a href="llms.txt">llms.txt</a> &mdash; Structured LLM discovery manifest.</li>
         <li><a href="AGENTS.md">AGENTS.md</a> &mdash; Autonomous auditor navigation parameters.</li>
         <li><a href="https://raw.githubusercontent.com/trencinodin-stack/arcstone-refinement-harness/main/docs/attestations/REFINEMENT-AUDIT-2026-V1.json" target="_blank" rel="noopener">REFINEMENT-AUDIT-2026-V1.json</a> &mdash; Machine-verifiable Coq 8.18.0 refinement proof receipt (<code>REFINEMENT-PROOF-CHAIN-CLOSED</code>).</li>
