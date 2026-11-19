@@ -111,7 +111,7 @@ normative_artifacts:
   - id: "ART-INDEX-01"
     path: "index.html"
     hash_algorithm: "sha256"
-    digest: "95cb77054eddd453ff48c577684838b2fc7993e075881ec180398ee351fecfa3"
+    digest: "9e7170740bce36db7ca8f0ed39a7ca957dfecc36b57175f843997f85f1e86684"
     claimed_level: "stated"
     toolchain: "HTML5 Edge Surface"
     toolchain_image_digest: "sha256:8f9c2d4e6a1b3c5d7e9f0a2b4c6d8e0f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d"
