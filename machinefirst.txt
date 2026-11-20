@@ -30,9 +30,9 @@ subject:
 contract_binding:
   contract_excluded_from_subject: true
   subject_revision_is_ancestor_of_contract_commit: true
-  allowed_delta_paths: ["MACHINEFIRST.md", "machinefirst.txt", "MACHINEFIRST.sha256", "validate_machinefirst.py", "llms.txt", "AGENTS.md", "robots.txt", "sitemap.xml", ".github/workflows/lint-machinefirst.yml", "README.md"]
+  allowed_delta_paths: ["MACHINEFIRST.md", "machinefirst.txt", "MACHINEFIRST.sha256", "validate_machinefirst.py", "llms.txt", "AGENTS.md", "SECURITY.md", "robots.txt", "sitemap.xml", ".github/workflows/lint-machinefirst.yml", "README.md"]
   contract_digest_published_in: "repository_commit_history"
-  mirror_rule: "web /machinefirst.txt must be byte-identical UTF-8 to repository MACHINEFIRST.md at release_tag"
+  mirror_rule: "web /machinefirst.txt must be byte-identical UTF-8 to repository MACHINEFIRST.md at contract commit / HEAD"
 persistent_ids:
   doi: ["10.5281/zenodo.24041851", "10.5281/zenodo.24093739", "10.5281/zenodo.23069559"]
   orcid: ["0000-0009-0008-4661-1540"]
